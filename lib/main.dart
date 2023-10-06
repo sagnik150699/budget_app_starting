@@ -15,7 +15,7 @@ void main() async {
       options: DefaultFirebaseOptions.currentPlatform,
     );
   } else {
-    await Firebase.initializeApp();
+    await Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform,);
   }
   runApp(
     ProviderScope(
