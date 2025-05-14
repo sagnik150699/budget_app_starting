@@ -1,0 +1,2 @@
+C:/Users/sagni/StudioProjects/budget_app_starting/android/app/.cxx/RelWithDebInfo/504r3n44/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/sagni/StudioProjects/budget_app_starting/android/app/.cxx/RelWithDebInfo/504r3n44/x86_64/CMakeFiles/rebuild_cache.dir

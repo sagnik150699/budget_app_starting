@@ -1,0 +1,2 @@
+C:/Users/sagni/StudioProjects/budget_app_starting/android/app/.cxx/RelWithDebInfo/504r3n44/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/sagni/StudioProjects/budget_app_starting/android/app/.cxx/RelWithDebInfo/504r3n44/armeabi-v7a/CMakeFiles/rebuild_cache.dir
