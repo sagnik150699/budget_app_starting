@@ -1,20 +1,35 @@
+import java.util.Properties
+
 pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+
+    // Load your flutterSdkPath from local.properties
     def flutterSdkPath = {
-        def properties = new Properties()
-        file("local.properties").withInputStream { properties.load(it) }
-        def flutterSdkPath = properties.getProperty("flutter.sdk")
-        assert flutterSdkPath != null, "flutter.sdk not set in local.properties"
-        return flutterSdkPath
-    }
-    settings.ext.flutterSdkPath = flutterSdkPath()
+        def props = new Properties()
+        file("local.properties").withInputStream { props.load(it) }
+        def sdk = props.getProperty("flutter.sdk")
+        assert sdk != null, "flutter.sdk not set in local.properties"
+        return sdk
+    }()
 
-    includeBuild("${settings.ext.flutterSdkPath}/packages/flutter_tools/gradle")
-
-    plugins {
-        id "dev.flutter.flutter-gradle-plugin" version "1.0.0" apply false
-    }
+    // Make the Flutter Gradle plugins available
+    includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
 }
 
-include ":app"
+plugins {
+    // Android Gradle plugin; match to whatever AGP version you need
+    id 'com.android.application' version '8.10.0' apply false
 
-apply from: "${settings.ext.flutterSdkPath}/packages/flutter_tools/gradle/app_plugin_loader.gradle"
+    // Kotlin Android plugin; must match your ext.kotlin_version / jvmTarget
+    id 'org.jetbrains.kotlin.android' version '1.9.10' apply false
+
+    // Flutter’s new plugin-loader
+    id 'dev.flutter.flutter-plugin-loader' version '1.0.0'
+}
+
+rootProject.name = 'my_dashatar_app'
+include ':app'
