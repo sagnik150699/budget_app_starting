@@ -1,0 +1,2 @@
+C:/Users/sagni/Documents/Workspace/budget_app_starting/android/app/.cxx/RelWithDebInfo/5x216256/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/sagni/Documents/Workspace/budget_app_starting/android/app/.cxx/RelWithDebInfo/5x216256/armeabi-v7a/CMakeFiles/rebuild_cache.dir
