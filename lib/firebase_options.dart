@@ -30,10 +30,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -52,16 +49,16 @@ class DefaultFirebaseOptions {
     messagingSenderId: '357935783557',
     projectId: 'budget-app-89e2f',
     authDomain: 'budget-app-89e2f.firebaseapp.com',
-    storageBucket: 'budget-app-89e2f.appspot.com',
+    storageBucket: 'budget-app-89e2f.firebasestorage.app',
     measurementId: 'G-HCK4LYTZG4',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBHWyC55ovaveulxwQDNBNggQhCskNE-oo',
-    appId: '1:357935783557:android:bb3a47cf604a791b7ed3ec',
+    appId: '1:357935783557:android:dda512eb92faded57ed3ec',
     messagingSenderId: '357935783557',
     projectId: 'budget-app-89e2f',
-    storageBucket: 'budget-app-89e2f.appspot.com',
+    storageBucket: 'budget-app-89e2f.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
@@ -69,8 +66,20 @@ class DefaultFirebaseOptions {
     appId: '1:357935783557:ios:c30df50b09ca6b1c7ed3ec',
     messagingSenderId: '357935783557',
     projectId: 'budget-app-89e2f',
-    storageBucket: 'budget-app-89e2f.appspot.com',
+    storageBucket: 'budget-app-89e2f.firebasestorage.app',
+    androidClientId: '357935783557-0sv5mmkmf8fe9ntjbta5ubmihj4kgp51.apps.googleusercontent.com',
     iosClientId: '357935783557-oh15arfgp9ls3bp7ufv0m954r1igevdt.apps.googleusercontent.com',
     iosBundleId: 'com.codingliquids.budgetAppStarting',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyCDU5N-CjvjIwbzS1bsVyCnA79iWoKk9Ms',
+    appId: '1:357935783557:web:c165d9155894d6b47ed3ec',
+    messagingSenderId: '357935783557',
+    projectId: 'budget-app-89e2f',
+    authDomain: 'budget-app-89e2f.firebaseapp.com',
+    storageBucket: 'budget-app-89e2f.firebasestorage.app',
+    measurementId: 'G-Q7T1VRZLW6',
+  );
+
 }

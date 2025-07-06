@@ -1,4 +1,4 @@
-package com.codingliquids.budget_app_starting
+package com.codingliquids.budgetappstarting
 
 import io.flutter.embedding.android.FlutterActivity
 
