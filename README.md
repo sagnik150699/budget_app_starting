@@ -1,13 +1,33 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/sagnik150699/Sagnik-Bhattacharya/master/public/sagnik-bhattacharya.png" alt="Sagnik Bhattacharya" width="180">
-</p>
-**Sagnik Bhattacharya**
-Website: [sagnikbhattacharya.com](https://sagnikbhattacharya.com)
+# Budget App Starting
 
-# budget_app_starting
+A Flutter learning project kept as part of my course and practice material.
 
-Welcome to the Budget App initial project to help you learn better! This app is a hands-on project from the Flutter course presented by Coding Liquids. It's designed to provide an intuitive budget tracking experience for users and offer a comprehensive introduction to Flutter development for students.
+## Learning Context
 
-## Instructions: 
-1. Connect with your credentials of Firebase from the lecture "Connect Firebase to Flutter project using CLI"
-2. The app will show a blank screen, so code along with the video and finally your code will start working.
+This repository is one of my Flutter learning projects and course examples. I use it as a reference implementation for students and as a compact practice codebase while teaching Flutter concepts through the material published at [sagnikbhattacharya.com/courses](https://sagnikbhattacharya.com/courses).
+
+## What This Project Is For
+
+- following along with a lesson or module from the course
+- revisiting a focused Flutter concept in a smaller repository
+- testing release builds and platform setup without rewriting the teaching code
+- keeping a practical sample app available for future revision
+
+## Supported Platforms
+
+`android`, `ios`, `web`, `windows`
+
+## Build Commands
+
+```bash
+flutter pub get
+flutter build apk --release
+flutter build web --release
+```
+
+## Notes For Students
+
+- This repository is primarily for learning, experimentation, and revision.
+- I generally avoid changing lib/ unless the lesson itself requires it, so compatibility updates are usually handled in tooling, dependency, or platform files.
+- Some projects may intentionally stay close to the version used during teaching so the code remains easier to compare with the course walkthrough.
+- Use the project together with the matching lesson for the best context instead of treating it as a finished production product.
