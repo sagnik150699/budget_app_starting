@@ -1,5 +1,11 @@
 # Budget App Starting
 
+## Course
+
+This project is part of **The Complete Flutter Course: Build Android, iOS, and Web apps**.
+
+[View the course on Coding Liquids](https://www.codingliquids.com/courses/Flutter-Course-Learn-to-Build-Android-iOS-and-Web-apps-637b978ee4b08f9aaa22d2cb)
+
 A Flutter learning project kept as part of my course and practice material.
 
 ## Learning Context
